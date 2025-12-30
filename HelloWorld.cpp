@@ -2,14 +2,15 @@
 
 int main()
 {
-	std::cout << 5; // print the literal 5 to the console
-	std::cout << -6.7; // print the literal -6.7 to the console
-	std::cout << 'H'; // print the literall character 'H' to the console
-	std::cout << "Hello"; // print the literal string "Hello" to the console
+	// here's some math/physics values that we copy-paste from elsewhere
+	[[maybe_unused]] double pi{ 3.14159265358979323846 };
+	[[maybe_unused]] double gravity{ 9.80665 }; // m/s^2
+	[[maybe_unused]] double phi{ 1.618033988749895 }; // golden ratio
 
-	int x; // define a variable name x (of type int) 
+	std::cout << pi << '\n';// pi is used 
+	std::cout << phi << '\n';// phi is used
 
-	double width; // define a variable name width (of type double)
+	// the compiler will likely complain that gravity is being defined but unused 
 
-	return 0; // indicate that the program ended successfully
+	return 0; 
 }
