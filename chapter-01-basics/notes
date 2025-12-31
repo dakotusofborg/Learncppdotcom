@@ -1,0 +1,31 @@
+Programs are collections of instructions that manipulate data to produce a desired result.
+
+Computer programs (both in source code format and compiled) are technically data too, since they can be moved, processed, and stored. However, in the context of a computer program, we typically use the term “code” to mean the program itself, and “data” to mean the information that the program works with to produce a result.
+
+Values placed in single-quotes are interpreted by the compiler as character values.Values placed in double-quotes are interpreted by the compiler as text values.Numeric values are not quoted.
+
+An object is used to store a value in memory. A variable is an object that has a name (identifier).
+
+Naming our objects let us refer to those objects again later in the program.
+
+In general programming, the term object typically refers to an unnamed object in memory, a variable, or a function. In C++, the term object has a narrower definition that excludes functions. When we use the term object in this tutorial series, this narrower C++ definition is the one we mean.
+
+A definition statement can be used to tell the compiler that we want to use a variable in our program
+
+An object is “created” once actual storage has been reserved for the object’s use.
+
+Initialization provides an initial value for a variable. Think “initial-ization”.
+
+When we see curly braces, we know we’re list-initializing an object.
+
+Initialization gives a variable an initial value at the point when it is created. Assignment gives a variable a value at some point after the variable is created.
+
+What form of initialization should you prefer when you want to initialize a variable with a specific value?
+
+Direct-list-initialization (aka. direct brace initialization).
+
+What are default-initialization and value-initialization? What is the behavior of each? Which should you prefer?
+
+Default-initialization is when a variable initialization has no initializer (e.g. int x;). In most cases, the variable is left with an indeterminate value.
+Value-initialization is when a variable initialization has an empty brace initializer (e.g. int x{};). In most cases this will perform zero-initialization.
+You should prefer value-initialization, as it initializes the variable to a consistent value.
